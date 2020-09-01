@@ -1,6 +1,6 @@
 # Techonauts
 
-##### Team Members: 
+### Team Members: 
 * Bonnie Atelsek
 * Nathan Murzello
 * Matthew Kabat
