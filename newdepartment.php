@@ -21,6 +21,9 @@
         Department ID Number: <input name="id" type="text" required> 
         <br>
         
+        Department Manager: <input name="manager" type="text" required>
+        <br>
+        
         Department Location: <input name="location" type="text" required>
         <br>
         <br>

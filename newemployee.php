@@ -25,6 +25,12 @@
         Employee ID Number: <input name="id" type="password" required>
         <br>
         
+        Employment Address: <input name="address" type="text" required>
+        <br>
+        
+        Employment City: <input name="city" type="text" required>
+        <br>
+        
         Employment State: 
         <select name="state" required> 
         <option selected> Alabama 
