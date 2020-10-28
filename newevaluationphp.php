@@ -62,7 +62,7 @@
     ?>
 
     <div class = banner>
-      <a href= "./homepage.html"> Back </a>
+      <a href= "./index.php"> Back </a>
     </div>
         
     <div id= copyright>
