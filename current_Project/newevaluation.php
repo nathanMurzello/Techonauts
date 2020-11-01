@@ -13,7 +13,8 @@
             Fill out all provided fields with the employee's evaluation information so that an evaluation can be added
             for them. <p>
 			Rating Evaluation <p>
-			(5 = Excellent, 4 = Good, 3 = Fair, 2 = Needs Improvement, 1 = Terrible)
+			(5 = Excellent, 4 = Good, 3 = Fair, 2 = Needs Improvement, 1 = Terrible)<p>
+			For complaints: <p>   1 = none, 2 = 0 to 5, 3 = 6 to 10, 4 = 11 to 15, 5 = greater than 15
         </div>
         
         <table>
@@ -36,7 +37,7 @@
 			
 		  <tr>
                   <td align="left" valign="top" id="Contact"><strong>1. How many complaints?</strong></td>
-                  <td align="left" valign="top"><input type="checkbox" name="value1" value="60"/>1<input type="checkbox" name="value1" value="70"/>2<input type="checkbox" name="value1" value="80"/>3<input type="checkbox" name="value1" value="90"/>4<input type="checkbox" name="value1" value="100"/>5</td>
+                  <td align="left" valign="top"><input type="checkbox" name="value1" value="100"/>1<input type="checkbox" name="value1" value="90"/>2<input type="checkbox" name="value1" value="80"/>3<input type="checkbox" name="value1" value="70"/>4<input type="checkbox" name="value1" value="60"/>5</td>
           </tr>
 		  
 			<tr>
