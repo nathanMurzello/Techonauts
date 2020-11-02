@@ -9,16 +9,12 @@
   <body>
     <?php
 	
+	require 'vendor/autoload.php';
+    $client = new MongoDB\Client(
+      'mongodb+srv://techno:techno123@cluster0.k9zfj.mongodb.net/EmployeeSystem?retryWrites=true&w=majority');
+    $collection=$client->selectCollection('EmployeeSystem','Evaluation');
 	
-	
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://technonauts:techno123@cluster0.k9zfj.mongodb.net/techno?retryWrites=true&w=majority";
-const client = new MongoClient(uri, ( useNewUrlParser: true ));
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
 
 	$weight1 = .30;   ##criteria question 1 (30%)
 	$weight2 = .15;   ##criteria question 2 (15%)
@@ -35,12 +31,41 @@ client.connect(err => {
 	$value4 = $_POST['value4'];
 	$value5 = $_POST['value5'];
 	
-	
+	if (is_numeric($emp_id) {
+      		$approved++;
+   	}
+	    else {
+	      echo "Error: A employee id can only contain numbers.<br>";
+	    }
+    
+	    if (is_numeric($eval_id)) {
+	      $approved++;
+	    }
+	    else {
+	      echo "\nError: An evaluation ID can only contain numbers.<br>";
+	    }
+	  
+	  
+	  
 	//calculate the evaluation raw score
     $score = (($value1*$weight1) + ($value2*$weight2) + ($value3*$weight3) + ($value4*$weight4) + ($value5*$weight5));
     //print "<div>Evaluation results are:  $score </div>";
 	//echo  "$emp_id, Evaluation raw score results are:, $score","%";
-
+	if ($approved == 3) {
+      
+	      $num_eid=(int)$_POST['emp_id'];
+		$num_evalid=(int)$_POST['eval_id'];
+		$num_score=(int)$score;
+	      $insert=array(
+		'_id'=>$num_evalid,
+		'Employee ID'=>$num_eid,
+		'Score'=>$num_score,
+	      );
+	      $collection->insertOne($insert);
+	    }
+	    else {
+	      echo "Operation unsuccessful: Evaluation was not added, please try again.";
+	    }
 
 echo "New evaluation added successfully";
 echo "Evaluation results are:, $score";
