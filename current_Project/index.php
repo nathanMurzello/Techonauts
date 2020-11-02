@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>Techonauts - Employee Evaluation System</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="./resources/stylesheet.css">
     </head>
