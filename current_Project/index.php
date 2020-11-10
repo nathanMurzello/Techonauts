@@ -11,7 +11,7 @@
         <div class= wrapper>
         
         <div id= stock> </div>
-        
+       
         <div class = content>
             <a href= "./pageunderconstruction.html">
             <div class= menu id= top_left>
@@ -40,6 +40,37 @@
 			<a href= "./pageunderconstruction.html">
             <div class= menu id= bottom_right>
                 View Employee Bonus
+            </div>
+            </a>
+			
+			<a href= "./createcomplaintphp.php">
+            <div class= menu id= bottom_right>
+                Add an Employee Complaint
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Edit Employee Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Employee Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Edit Department Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Department Profile
+            </div>
+            </a>
+			<a href= "./pageunderconstruction.html">
+            <div class= menu id= bottom_right>
+                Delete Employee Complaint
             </div>
             </a>
         </div>
